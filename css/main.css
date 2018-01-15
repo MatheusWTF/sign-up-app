@@ -1,0 +1,137 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+*{box-sizing: border-box;}
+body, html{margin:0; padding:0; background-color: #f4f4f4; font-family: 'Lato', sans-serif; color: teal;}
+
+/* Card and Container */
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+.form{
+  position: absolute;
+  top: 50%;
+  transform: translate(0%,-50%);
+  max-width: 500px;
+  min-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow:3px 3px 5px #ccc;
+}
+
+/* Form */
+.full-wd{width:100%;}
+
+.title{
+  font-size: 22pt; 
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 15px 0px;
+}
+
+.form-control{
+  padding: 10px 0px;
+}
+
+label.outside{
+  top: 0px;
+  left: 0px;
+  font-size: 12pt;
+  color: teal;
+  transition: top 300ms ease-in-out, left 300ms ease-in-out, font-size 300ms ease-in-out, color 300ms ease-in-out;
+  -moz-transition: top 300ms ease-in-out, left 300ms ease-in-out, font-size 300ms ease-in-out, color 300ms ease-in-out;
+  -webkit-transition: top 300ms ease-in-out, left 300ms ease-in-out, font-size 300ms ease-in-out, color 300ms ease-in-out;
+  -o-transition: top 300ms ease-in-out, left 300ms ease-in-out, font-size 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+label{
+  display: block;
+  position: relative;
+  top: 22px;
+  left: 10px;
+  font-size: 10pt;
+  color: rgb(137, 196, 196);
+  pointer-events: none;
+  transition: top 300ms ease-in-out, left 300ms ease-in-out, font-size 300ms ease-in-out, color 300ms ease-in-out;
+  -moz-transition: top 300ms ease-in-out, left 300ms ease-in-out, font-size 300ms ease-in-out, color 300ms ease-in-out;
+  -webkit-transition: top 300ms ease-in-out, left 300ms ease-in-out, font-size 300ms ease-in-out, color 300ms ease-in-out;
+  -o-transition: top 300ms ease-in-out, left 300ms ease-in-out, font-size 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+input[type="text"], input[type="password"]{
+  padding: 5px 0px 5px 8px;
+  border: none;
+  border-bottom: 1px solid rgb(0, 202, 202);
+  transition: border-bottom 300ms ease-in-out;
+  -webkit-transition: border-bottom 300ms ease-in-out;
+  -moz-transition: border-bottom 300ms ease-in-out;
+  -o-transition: border-bottom 300ms ease-in-out;
+}
+
+input[type="text"]:focus, input[type="password"].all-good:focus{
+  padding: 5px 0px 5px 8px;
+  border: none;
+  border-bottom: 2px solid teal;
+  outline: none;
+}
+
+input[type="password"]:focus{
+  padding: 5px 0px 5px 8px;
+  border: none;
+  border-bottom: 2px solid red;
+  outline: none;
+}
+
+input[type="submit"]{
+  border-radius: 10px;
+  border: 2px solid rgb(224, 84, 84);
+  background-color: transparent;
+  padding: 5px;
+  color: red;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: wait;
+}
+
+input[type="submit"].ok{
+  border-radius: 10px;
+  border: 2px solid rgb(0, 202, 202);
+  background-color: transparent;
+  padding: 5px;
+  color: teal;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Rules and Check */
+.bars{display: flex; justify-content: space-between;}
+.bar{height: 10px; background-color: #f4f4f4; margin-top: 10px; border-radius: 5px;}
+.weak, .med{width: 15%;}
+.normal{width: 20%;}
+.strong{width: 40%;}
+
+.one-rule{background-color: rgb(224, 84, 84)}
+.two-rules{background-color: rgb(255, 236, 63)}
+.three-rules{background-color: rgb(96, 230, 96)}
+.four-rules{background-color: rgb(0, 202, 202)}
+
+.rule-list{list-style: none; margin-bottom: 0; padding: 0;}
+
+.rules{
+  font-size: 10pt;
+  color: #999;
+}
+
+.fa-times{
+  padding-right: 10px;
+  color: rgb(224, 84, 84);
+}
+
+.fa-check{
+  padding-right: 10px;
+  color: rgb(0, 202, 202);
+}

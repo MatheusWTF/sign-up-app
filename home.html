@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Sign Up</title>
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+      <form>
+        <div class="title">
+          Sign Up
+        </div>
+        <div class="form-control">
+          <label for="name">
+            Name:
+          </label>
+          <input type="text" name="name" id="name" class="full-wd input-form">
+        </div>
+        <div class="form-control">
+          <label for="email">
+            email:
+          </label>
+          <input type="text" name="email" id="email" class="full-wd input-form">
+        </div>
+        <div class="form-control">
+          <label for="password">
+            Password:
+          </label>
+          <input type="password" name="password" id="pwd" class="full-wd input-form">
+          <div class="test-pwd">
+            <div class="bars">
+              <div class="bar weak"></div>
+              <div class="bar med"></div>
+              <div class="bar normal"></div>
+              <div class="bar strong"></div>
+            </div>
+            <div class="test-rules">
+              <ul class="rule-list">
+                <li class="rules" id="min-dig"><i class="fa fa-times"></i>Password must contain at least 8 digits</li>
+                <li class="rules" id="number-pwd"><i class="fa fa-times"></i>Password must contain at least 1 number</li>
+                <li class="rules" id="uppercase"><i class="fa fa-times"></i>Password must contain at least one Uppercase letter</li>
+                <li class="rules" id="special-char"><i class="fa fa-times"></i>Password must contain at least one special character</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="form-control">
+          <label for="password-confirm">
+            Confirm Password:
+          </label>
+          <input type="password" name="password-confirm" id="pwd-confirm" class="full-wd  input-form">
+        </div>
+        <div class="form-control">
+          <input type="submit" value="Sign Up" class="full-wd" id="submit">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
